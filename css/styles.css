@@ -1,5 +1,5 @@
 /* Body */
-body{
+body {
   font-family: Arial, sans-serif;
   line-height:1.6;
   background-color:#f5f7fa;
@@ -10,13 +10,23 @@ body{
   justify-content:center;
 }
 
-/* Main container */
-#root{
+#root {
   width:800px;
 }
 
+/* Main and Footer */
+main {
+  flex: 1; /* pushes footer down */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: auto; /* ensures footer stays at bottom */
+}
+
 /* Card */
-.card{
+.card {
   background:#ffffff;
   padding:20px;
   margin-bottom:20px;
@@ -25,59 +35,59 @@ body{
   transition:transform 0.2s;
 }
 
-.card:hover{
+.card:hover {
   transform:translateY(-3px);
 }
 
 /* Headings */
-h1{
+h1 {
   text-align:center;
   margin-bottom:10px;
   color:#1f3a5f;
 }
 
-h2{
+h2 {
   margin-bottom:10px;
   margin-top:20px;
   color:#1f3a5f;
 }
 
 /* Profile image */
-img{
+img {
   display:block;
   margin:10px auto;
   border-radius:50%;
 }
 
 /* Links */
-a{
+a {
   text-decoration:none;
   color:#2563eb;
 }
 
-a:hover{
+a:hover {
   color:#1d4ed8;
 }
 
 /* Table */
-table{
+table {
   width:100%;
   border-collapse:collapse;
 }
 
-th, td{
+th, td {
   padding:8px;
   border:1px solid #ddd;
   text-align:left;
 }
 
-th{
+th {
   background-color:#1f3a5f;
   color:white;
 }
 
 /* Button */
-button{
+button {
   padding:10px 15px;
   background-color:#1f3a5f;
   color:white;
@@ -87,12 +97,12 @@ button{
   margin-top:10px;
 }
 
-button:hover{
+button:hover {
   background-color:#16324f;
 }
 
 /* Form */
-input, textarea{
+input, textarea {
   width:100%;
   padding:8px;
   margin-top:5px;
@@ -102,15 +112,15 @@ input, textarea{
 }
 
 /* Dark mode */
-.dark-mode{
+.dark-mode {
   background-color:#121212;
   color:#f4f4f4;
 }
 
-.dark-mode .card{
+.dark-mode .card {
   background:#1e1e1e;
 }
 
 .hidden {
-    display:none;
+  display:none;
 }
