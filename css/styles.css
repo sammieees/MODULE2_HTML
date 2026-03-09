@@ -1,0 +1,122 @@
+/* || Global Styles */
+*{
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family: Arial, sans-serif;
+line-height:1.6;
+background-color:#686464;
+padding:20px;
+}
+
+/* Center Page Container */
+.container{
+max-width:800px;
+margin:0 auto;
+text-align:center;
+}
+
+/* Card Styling */
+.card{
+background:#c6c4c4;
+padding:20px;
+margin-bottom:20px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Typography */
+h1{
+text-align:center;
+margin-bottom:10px;
+}
+
+h2{
+margin-bottom:10px;
+margin-top:20px;
+}
+
+/* Center Image */
+img{
+display:block;
+margin:15px auto;
+border-radius:8px;
+}
+
+/* Lists */
+ul{
+margin-left:20px;
+margin-bottom:10px;
+text-align:left;
+}
+
+/* Links */
+a{
+text-decoration:none;
+color:#dee0e1;
+}
+
+a:hover{
+color:#dee2e4;
+}
+
+/* Table */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th,td{
+border:1px solid #1d1c1c;
+padding:8px;
+text-align:center;
+}
+
+th{
+background-color:#6e6f70;
+color:rgb(249, 245, 245);
+}
+
+/* Form */
+form{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+input, textarea{
+padding:8px;
+border:1px solid #e1dfdf;
+border-radius:4px;
+}
+
+button{
+padding:10px;
+background-color:#616263;
+color:rgb(239, 237, 237);
+border:none;
+cursor:pointer;
+}
+
+button:hover{
+background-color:#5f6061;
+}
+
+/* Footer */
+footer{
+text-align:center;
+margin-top:20px;
+}
+
+.dark-mode {
+background-color:#222;
+color:white;
+}
+
+.hidden {
+  display: none;
+}
