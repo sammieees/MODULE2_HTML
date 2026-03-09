@@ -1,12 +1,10 @@
 function Card({ title, children }) {
-    return (
-        <div className= "container">
-            <section className="card">
-            <h2>{title}</h2>
-            {children}
-            </section>
-        </div>
-    );
+  return (
+    <section className="card">
+      <h2>{title}</h2>
+      {children}
+    </section>
+  );
 }
+
 export default Card;
-    
