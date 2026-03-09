@@ -110,3 +110,7 @@ input, textarea{
 .dark-mode .card{
   background:#1e1e1e;
 }
+
+.hidden {
+    display:none;
+}
