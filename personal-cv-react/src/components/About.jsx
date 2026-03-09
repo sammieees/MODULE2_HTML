@@ -7,7 +7,8 @@ function About() {
       <section className="card">
         <Card title="About Me">
           import profile from "../assets/profile.jpg";
-          <img src={profile} alt="Profile" />
+
+<img src={profile} alt="Profile photo" width="150" />
           <p>
             Hi! I'm Samantha Nicole Bogo. I'm an IT student who enjoys learning new things and improving skills.
           </p>
