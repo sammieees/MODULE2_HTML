@@ -6,9 +6,9 @@ submitBtn.addEventListener("click",function(event){
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     if (name===""||email===""){
-    alert("Please fill in all required fields.");
+    alert("please fill in all required fields.");
     } else{
-    alert("Form submitted successfully!");
+    alert("form submitted successfully!");
     }
 });
 
