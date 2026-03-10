@@ -10,7 +10,7 @@ function About() {
 
 <img src={profile} alt="Profile photo" width="150" />
           <p>
-            Hi! I'm Samantha Nicole Bogo. I'm an IT student who enjoys learning new things and improving skills.
+            Hi! I'm Samantha Nicole E. Bogo. I'm an IT student who enjoys learning new things and improving skills.
           </p>
           <p>
             Email:{" "}
