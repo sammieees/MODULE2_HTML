@@ -21,8 +21,9 @@ main {
 
 footer {
   text-align: center;
-  padding: 10px;
-  margin-top: auto; /* ensures footer stays at bottom */
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #555;
 }
 
 /* Card */
