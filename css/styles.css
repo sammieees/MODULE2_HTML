@@ -1,25 +1,31 @@
 /* Body */
 body {
   font-family: Arial, sans-serif;
-  line-height:1.6;
-  background-color:#f5f7fa;
-  color:#333;
-  margin:0;
-  padding:20px;
-  display:flex;
-  justify-content:center;
+  line-height: 1.6;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh; /* ensures full height */
 }
 
+/* Root container */
 #root {
-  width:800px;
+  width: 800px;
+  display: flex;
+  flex-direction: column; /* stack content vertically */
 }
 
+/* Footer */
 footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: auto; /* pushes footer to the bottom */
   font-size: 0.9em;
   color: #555;
 }
+
 
 /* Card */
 .card {
