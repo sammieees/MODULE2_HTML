@@ -14,7 +14,7 @@ body {
   padding: 20px;
   display: flex;
   justify-content: center;
-  min-height: 100vh; /* ensures full height */
+  min-height: 100vh;
 }
 
 /* Root container */
@@ -23,15 +23,6 @@ body {
   display: flex;
   flex-direction: column; /* stack content vertically */
 }
-
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: auto; /* pushes footer to the bottom */
-  font-size: 0.9em;
-  color: #555;
-}
-
 
 /* Card */
 .card {
@@ -123,6 +114,14 @@ input, textarea {
 .dark-mode {
   background-color:#121212;
   color:#f4f4f4;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: auto; /* pushes footer to the bottom */
+  font-size: 0.9em;
+  color: #555;
 }
 
 .dark-mode .card {
