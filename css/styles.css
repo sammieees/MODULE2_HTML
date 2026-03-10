@@ -14,11 +14,6 @@ body {
   width:800px;
 }
 
-/* Main and Footer */
-main {
-  flex: 1; /* pushes footer down */
-}
-
 footer {
   text-align: center;
   margin-top: 40px;
