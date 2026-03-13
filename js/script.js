@@ -28,5 +28,5 @@ const toggleSkills = document.getElementById("toggleSkills");
 const skillsList = document.getElementById("skillsList");
 
 toggleSkills.addEventListener("click", function(){
-  skillsList.classList.toggle("hidden");
+skillsList.classList.toggle("hidden");
 });

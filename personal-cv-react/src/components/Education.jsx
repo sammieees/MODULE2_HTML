@@ -1,6 +1,9 @@
+import Card from "./Card";
+
 function Education({ education }) {
   return (
-    <Card title="Education">
+    <div className="container education card">
+      <h2>Education</h2>
       <table>
         <thead>
           <tr>
@@ -19,7 +22,7 @@ function Education({ education }) {
           ))}
         </tbody>
       </table>
-    </Card>
+    </div>
   );
 }
 

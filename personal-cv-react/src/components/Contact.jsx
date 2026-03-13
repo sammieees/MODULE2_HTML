@@ -11,25 +11,27 @@ function Contact() {
   }
 
   return (
-    <Card title="Contact Me">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Your Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
+    <div className="container">
+      <Card title="Contact Me">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Your Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
 
-        <input
-          type="email"
-          placeholder="Your Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+          <input
+            type="email"
+            placeholder="Your Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-        <button type="submit">Send</button>
-      </form>
-    </Card>
+          <button type="submit">Send</button>
+        </form>
+      </Card>
+    </div>
   );
 }
 
