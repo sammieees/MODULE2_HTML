@@ -1,10 +1,11 @@
-import AboutMe from "./components/AboutMe";
+import AboutMe from "./components/About";
+import Header from "./components/Header";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import "./index.css";
 
 function App() {
-  // Sample data for Education
   const educationData = [
     { program: "College", school: "USTP-CDO", year: "2028" },
     { program: "Senior High School", school: "Immaculate Academy Duero Bohol, Inc.", year: "2023" },
@@ -12,19 +13,16 @@ function App() {
     { program: "Elementary", school: "Duero Central Elementary School", year: "2016" },
   ];
 
-  // Sample data for Skills
   const skillsData = ["HTML", "CSS", "JavaScript", "React"];
 
   return (
-    <div>
-      <header>
-        <h1>Samantha Nicole E. Bogo</h1>
-        <h3>IT Student | Web System and Technologies</h3>
-      </header>
+    <div className="container">
+      <h1>Samantha Nicole E. Bogo</h1>
+      <h2>IT | Web System and Technologies</h2>
 
       <AboutMe />
-      <Education education={educationData} />
-      <Skills skills={skillsData} />
+      <Education />
+      <Skills />
       <Contact />
     </div>
   );
