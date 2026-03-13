@@ -26,8 +26,8 @@ function App() {
       <div className="container">
   <Header />
   <About />
-  <Skills skills={skills} />
   <Education education={education} />
+  <Skills skills={skills} />
   <Contact />
   <footer>2026 Samantha Nicole Bogo. All rights reserved.</footer>
 </div>
