@@ -7,24 +7,19 @@
 
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f5f7fa;
   color: #333;
-  display: flex;
-  justify-content: center;
 }
 
-
 #root {
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
-  width: 800px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 
@@ -38,95 +33,58 @@ main {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-
-
-.skills.card {
-  margin-bottom: 40px;  
-  padding: 25px;         
-}
-
-.skills-toggle {
-  text-align: left;       
-  margin-bottom: 10px;
-}
-
-.skills-header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.skills-content ul {
-  list-style-type: disc;
-  padding-left: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.skills-content li {
-  margin-bottom: 6px;
-}
-
-.education.card {
-  margin-bottom: 40px;   
-  padding: 25px;
-}
-
-
-.contact.card {
-  margin-bottom: 60px;  
-  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-3px);
 }
 
-header.card p {
-  text-align: center; 
-  margin-top: 5px;      
-  font-size: 1.1em;    
-  color: #333;          
-}
 
-
-h1, h2 {
+header.card h1 {
+  text-align: center;
+  margin-bottom: 8px;
   color: #1f3a5f;
 }
 
-h1 {
+header.card p {
   text-align: center;
-  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #333;
 }
 
+
 h2 {
-  margin: 20px 0 10px 0;
+  margin: 20px 0 10px;
+  color: #1f3a5f;
 }
 
 
 img {
   display: block;
-  margin: 10px auto;
+  margin: 15px auto;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 
 a {
-  text-decoration: none;
   color: #2563eb;
+  text-decoration: none;
 }
 
 a:hover {
   color: #1d4ed8;
 }
 
+
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 10px;
 }
 
 th, td {
@@ -141,39 +99,57 @@ th {
 }
 
 
+.skills.card {
+  padding: 25px;
+  margin-bottom: 40px;
+}
+
+.skills-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.skills-content ul {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+
+.skills-content li {
+  margin-bottom: 6px;
+}
+
 button {
   padding: 10px 15px;
   background-color: #1f3a5f;
-  color: white;
+  color: #ffffff;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
-  margin-top: 10px;
+  cursor: pointer;
 }
 
 button:hover {
   background-color: #16324f;
 }
 
-
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 8px;
-  margin: 5px 0 10px 0;
+  margin: 5px 0 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 
 footer {
-  width: 100%;          
-  text-align: center;      
-  margin-top: auto;       
+  text-align: center;
   padding: 20px 0;
-  background-color: #f0f0f0; 
-  color: #444444;
+  margin-top: auto;
+  background-color: #f0f0f0;
+  color: #444;
   font-size: 0.9em;
-  display: block;       
 }
 
 
@@ -183,16 +159,13 @@ footer {
 }
 
 .dark-mode .card {
-  background: #1e1e1e;
+  background-color: #1e1e1e;
 }
 
+.dark-mode th {
+  background-color: #333;
+}
 
 .hidden {
   display: none;
-}
-
-
-.container {
-  max-width: 800px;
-  margin: auto;
 }
