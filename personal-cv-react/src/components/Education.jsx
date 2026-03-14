@@ -2,7 +2,7 @@ import Card from "./Card";
 
 function Education({ education }) {
   return (
-    <div className="container education card">
+    <div className="Section card">
       <h2>Education</h2>
       <table>
         <thead>

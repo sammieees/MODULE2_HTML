@@ -5,7 +5,6 @@ function Skills({ skills }) {
 
   return (
     <section className="card skills">
-      {/* Button above the header, aligned left */}
       <div className="skills-toggle">
         <button onClick={() => setVisible(!visible)}>
           {visible ? "Hide Skills" : "Show Skills"}
