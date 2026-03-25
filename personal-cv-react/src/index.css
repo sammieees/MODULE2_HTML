@@ -5,11 +5,6 @@
   padding: 0;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto; 
-}
-
 html, body {
   height: 100%;
   font-family: Arial, sans-serif;
@@ -35,18 +30,19 @@ main {
 
 .card {
   background: #ffffff;
-  padding: 30px;         
-  margin: 20px auto;     
+  padding: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
-  border: 2px solid #1f3a5f;   
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-  max-width: 700px;
-  width: 100%;
+  border: 1px solid #ddd;
 }
 
 header.card {
+  position: relative;
   text-align: center;
+}
+
+.about-box {
+  border: none;
 }
 
 .card:hover {
