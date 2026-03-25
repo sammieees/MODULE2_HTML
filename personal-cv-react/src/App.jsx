@@ -40,7 +40,7 @@ function App() {
           <Contact />
 
           <footer>
-        <p>All rights reserved © 2026</p>
+        <p>© 2026 Samantha Nicole Bogo. All rights reserved.</p>
       </footer>
 
         </div>
