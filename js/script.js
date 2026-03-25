@@ -24,9 +24,11 @@ document.body.classList.toggle("dark-mode");
     }
 });
 
-const toggleSkills = document.getElementById("toggleSkills");
-const skillsList = document.getElementById("skillsList");
 
-toggleSkills.addEventListener("click", function(){
-skillsList.classList.toggle("hidden");
+const toggleSkillsBtn = document.getElementById("toggleSkillsBtn");
+const skillsSection = document.getElementById("skillsSection");
+
+toggleSkillsBtn.addEventListener("click", () => {
+  skillsSection.classList.toggle("hidden");
 });
+
