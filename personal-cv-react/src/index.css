@@ -5,24 +5,26 @@
   padding: 0;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto; 
+}
+
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f5f7fa;
   color: #333;
 }
 
+
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto; 
-  padding: 20px;
+  width: 800px;
+  margin: 0 auto;
 }
 
 
@@ -33,11 +35,14 @@ main {
 
 .card {
   background: #ffffff;
-  padding: 20px;
-  margin-bottom: 25px;   
+  padding: 30px;         
+  margin: 20px auto;     
   border-radius: 10px;
+  border: 2px solid #1f3a5f;   
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.2s;
+  max-width: 700px;
+  width: 100%;
 }
 
 header.card {
