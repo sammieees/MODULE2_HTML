@@ -42,6 +42,16 @@ main {
   width: 100%;           
 }
 
+.container {
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+.container.dark {
+  background-color: #121212;
+  color: white;
+}
 
 header.card {
   position: relative;
@@ -62,7 +72,7 @@ header.card .toggle-btn {
 }
 
 
-skills-content {
+.skills-content {
   padding: 20px;         
 }
 
