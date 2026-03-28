@@ -181,6 +181,17 @@ footer {
   display: none;
 }
 
+form {
+  position: relative;
+  z-index: 10;
+}
+
+button {
+  position: relative;
+  z-index: 10;
+}
+
+
 
 @media (max-width: 900px) {
   #root {
