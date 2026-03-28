@@ -1,130 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="css/styles.css"> 
-    <title>personal-cv-react</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
 <body>
 
-<main>
+<div id="root">
+<div class="wrapper">
+  <!-- Header -->
+  <button id="modeToggle">Light/Dark Mode</button>
+  <header class="card">
+    <h1>Samantha Nicole E. Bogo</h1>
+    <p class="subtitle">IT Student | Web Systems and Technologies</p>
+  </header>
 
-<div class="container">
+  <main>
 
- <header class="card">
- <button id="themeToggle" class="toggle-btn">Toggle Dark Mode</button>
-  <h1>Samantha Nicole E. Bogo</h1>
-  <p class="subtitle">IT STUDENT | WEB SYSTEM AND TECHNOLOGIES</p>
-</header>
+    <section class="card about-box">
+      <div class="aboutme">
+      <h2>About Me</h2>
+      <img src=./images/profile.jpg alt="Profile photo" width="150" />
 
-  <section class="card">
-    <h2>About Me</h2>
-    <img src="images/profile.jpg" alt="Profile photo" width="150">
-    <p>
-      Hi! I'm Samantha Nicole E.Bogo. I'm an IT student who enjoys learning new things and improving skills.
-    </p>
-    <p>
-      Email:
-      <a href="mailto:bogosamanthanicole25@gmail.com">bogosamanthanicole25@gmail.com</a><br>
-      GitHub:
-      <a href="https://github.com" target="_blank">github.com</a>
-    </p>
-  </section>
+        <p>
+          Hi! I'm Samantha Nicole E. Bogo. I'm an IT student who enjoys learning new things and improving skills.
+        </p>
 
-  <section class="card">
-    <h2>Education</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Program</th>
-          <th>Institution</th>
-          <th>Year Graduated</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>College</td>
-          <td>USTP-CDO</td>
-          <td>2028</td>
-        </tr>
-        <tr>
-          <td>Senior High School</td>
-          <td>Immaculate Academy Duero Bohol, Inc.</td>
-          <td>2023</td>
-        </tr>
-        <tr>
-          <td>Junior High School</td>
-          <td>Immaculate Academy Duero Bohol, Inc.</td>
-          <td>2020</td>
-        </tr>
-        <tr>
-          <td>Elementary</td>
-          <td>Duero Central Elementary School</td>
-          <td>2016</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+        <p>
+          Email:
+          <a href="mailto:bogosamanthanicole25@gmail.com">
+            bogosamanthanicole25@gmail.com
+          </a>
+          <br />
+          GitHub:
+          <a href="https://github.com" target="_blank" rel="noreferrer">
+            github.com
+          </a>
+        </p>
+      </div>
+    </section>
 
-  <section class="card" id="skillsSection"> 
-  <button id="toggleSkillsBtn">Show/Hide Skills</button>
-  
-  <div id="skillsList">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-    </ul>
+    <!-- Education -->
+    <section class="card">
+      <h2>Education</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Program</th>
+            <th>Institution</th>
+            <th>Year Graduated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>College</td>
+            <td>USTP-CDO</td>
+            <td>2028</td>
+          </tr>
+          <tr>
+            <td>Senior High School</td>
+            <td>Immaculate Academy Duero Bohol, Inc.</td>
+            <td>2023</td>
+          </tr>
+          <tr>
+            <td>Junior High School</td>
+            <td>Immaculate Academy Duero Bohol, Inc.</td>
+            <td>2020</td>
+          </tr>
+          <tr>
+            <td>Elementary</td>
+            <td>Duero Central Elementary School</td>
+            <td>2016</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-          
-  </div>
-</section>
+    <!-- Skills -->
+    <section class="card">
+      <button id="toggleSkills">Hide Skills</button>
+            <div class="skills-content" id="skillsContent">
+      <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+        </ul>
+      </div>
+    </section>
 
-  <section class="card">
-  <h2>Contact Me</h2>
-  <form>
-    <input type="text" id="name" placeholder="Name"><br><br>
-    <input type="email" id="email" placeholder="Email"><br><br>
-    <textarea placeholder="Message"></textarea><br><br>
-    <button type="submit" id="submitBtn">Send</button> 
-  </form>
-</section>
+    <!-- Contact -->
+    <section class="card">
+      <h2>Contact Me</h2>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <button>Send</button>
+    </section>
 
-<footer class="card">
-  <p>&copy; 2026 Samantha Nicole Bogo. All rights reserved.</p>
-</footer>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Samantha Nicole Bogo. All rights reserved.
+  </footer>
 
 </div>
-</main>
-<div id="root"></div>
+</div>
+
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+  const modeBtn = document.getElementById("modeToggle");
+  const root = document.getElementById("root");
 
-  const themeToggle = document.getElementById("themeToggle");
-  if (themeToggle) {
-    themeToggle.addEventListener("click", function(){
-      document.body.classList.toggle("dark-mode");
+  modeBtn.addEventListener("click", () => {
+    root.classList.toggle("dark-mode");
+  });
 
-      themeToggle.textContent =
-        document.body.classList.contains("dark-mode")
-        ? "Toggle Light Mode"
-        : "Toggle Dark Mode";
-    });
-  }
+  const toggleBtn = document.getElementById("toggleSkills");
+  const skills = document.getElementById("skillsContent");
 
-  const toggleSkillsBtn = document.getElementById("toggleSkillsBtn");
-  const skillsList = document.getElementById("skillsList");
+  toggleBtn.addEventListener("click", () => {
+    skills.classList.toggle("hidden");
 
-  if (toggleSkillsBtn && skillsList) {
-    toggleSkillsBtn.addEventListener("click", () => {
-      skillsList.classList.toggle("hidden");
-    });
-  }
-
-});
+    toggleBtn.textContent =
+      skills.classList.contains("hidden")
+        ? "Show Skills"
+        : "Hide Skills";
+  });
 </script>
 
 </body>
