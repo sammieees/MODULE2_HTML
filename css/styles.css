@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,14 +27,6 @@ main {
   flex: 1;
 }
 
-.aboutme {
-    border-radius: 10px;
-  border: 1px solid #ddd;
-  padding: 20px;
-}
-.aboutme h2{
-  font-size: 24px;
-}
 
 .card {
   background: #ffffff;
@@ -72,8 +65,6 @@ h1 {
   text-align: center;   
   margin-bottom: 10px;
   color: #1f3a5f;
-  font-size: 32px;
-  font-weight:700;
 }
 
 h2 {
@@ -86,7 +77,7 @@ h2 {
 .subtitle {
   text-align: center; 
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1.2em;
   color: #1f3a5f;
 }
 
@@ -95,15 +86,12 @@ img {
   display: block;
   margin: 10px auto;
   border-radius: 50%;
-  width: 150px;
-  height: 192px;
 }
 
 
 a {
   text-decoration: none;
   color: #2563eb;
-  font-size: 16px;
 }
 
 a:hover {
@@ -168,7 +156,6 @@ footer {
 .dark-mode {
   background-color: #121212;
   color: #f4f4f4;
-  height: auto;
 }
 
 .dark-mode .card {
@@ -203,6 +190,7 @@ button {
   position: relative;
   z-index: 10;
 }
+
 
 
 @media (max-width: 900px) {
