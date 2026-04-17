@@ -10,7 +10,7 @@ html, body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f5f7fa;
-  color: #333;
+  color: #370731;
 }
 
 
@@ -29,11 +29,11 @@ main {
 
 
 .card {
-  background: #ffffff;
+  background: #d0cace;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #0b0a0a;
 }
 
 header.card {
@@ -64,12 +64,12 @@ header.card {
 h1 {
   text-align: center;   
   margin-bottom: 10px;
-  color: #1f3a5f;
+  color: #343435;
 }
 
 h2 {
   margin: 20px 0 10px 0;
-  color: #1f3a5f;
+  color: #1c1d1e;
   text-align: left;     
 }
 
@@ -78,7 +78,7 @@ h2 {
   text-align: center; 
   font-weight: normal;
   font-size: 1.2em;
-  color: #1f3a5f;
+  color: #62234e;
 }
 
 
@@ -91,11 +91,11 @@ img {
 
 a {
   text-decoration: none;
-  color: #2563eb;
+  color: #5c606a;
 }
 
 a:hover {
-  color: #1d4ed8;
+  color: #ede6ec;
 }
 
 
@@ -106,19 +106,19 @@ table {
 
 th, td {
   padding: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid #1b1a1a;
   text-align: left;
 }
 
 th {
-  background-color: #1f3a5f;
+  background-color: #834b79;
   color: white;
 }
 
 
 button {
   padding: 10px 15px;
-  background-color: #1f3a5f;
+  background-color: #6c2354;
   color: white;
   border: none;
   cursor: pointer;
@@ -127,7 +127,7 @@ button {
 }
 
 button:hover {
-  background-color: #16324f;
+  background-color: #200119;
 }
 
 
@@ -147,7 +147,7 @@ footer {
   align-items: center;
   margin-top: auto;
   padding: 10px 0;
-  background-color: #f0f0f0;
+  background-color: #bdb1bc;
   color: #444;
   font-size: 0.9em;
 }
@@ -193,20 +193,3 @@ button {
 
 
 
-@media (max-width: 900px) {
-  #root {
-    width: 95%;   
-  }
-
-  table, th, td {
-    font-size: 0.9em;
-  }
-
-  h1 {
-    font-size: 1.6em;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-}
