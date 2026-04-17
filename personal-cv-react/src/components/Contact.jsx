@@ -42,7 +42,7 @@ function Contact() {
       <textarea
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        placeholder="Your Message"
+        placeholder="Message"
       />
       <button type="submit">Send</button>
     </form>
