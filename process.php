@@ -34,7 +34,7 @@ $name = $conn->real_escape_string($data['name']);
 
 $sql = "INSERT INTO contacts (name) VALUES ('$name')";
 
-// execute
+
 if ($conn->query($sql) === TRUE) {
     echo json_encode([
         "message" => "Data saved successfully"
