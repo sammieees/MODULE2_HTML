@@ -116,8 +116,19 @@
   const root = document.getElementById("root");
 
   modeBtn.addEventListener("click", () => {
-    root.classList.toggle("dark-mode");
+    const isDark = root.classList.toggle("dark-mode");
+
+    modeBtn.textContent = isDark
+      ? "Light Mode"
+      : "Dark Mode";
   });
+
+  if (root.classList.contains("dark-mode")) {
+    modeBtn.textContent = "Light Mode";
+  } else {
+    modeBtn.textContent = "Dark Mode";
+  }
+
 
   const toggleBtn = document.getElementById("toggleSkills");
   const skills = document.getElementById("skillsContent");
